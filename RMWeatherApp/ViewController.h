@@ -6,9 +6,16 @@
 //  Copyright © 2016 Rahul Mankar. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#define kWeatherAPIKey @"069271c372b80c0cc3c5c0370e67eb2d"
 
-@interface ViewController : UIViewController
+
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+
+@interface ViewController : UIViewController<CLLocationManagerDelegate>
+{
+    CLLocationManager *locationManager;
+}
 
 
 @end
